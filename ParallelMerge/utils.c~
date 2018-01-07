@@ -44,11 +44,11 @@ void getData ( long **vPtr, int *sizePtr )
    for ( k = 0; k < size; k++ )
       data[k] = k+1;
    shuffleArray ( data, size );
-	/*FILE *f;
+	FILE *f;
 	f = fopen("data.txt", "rt");
 	int i=0;
 	while (!feof(f)) {long n; fscanf(f,"%ld",&n); data[i]=n; i++;}
-	fclose(f);*/
+	fclose(f);
 	//data[0]=5; data[1]=14; data[2]=4; data[3]=18; data[4]=20; data[5]=12; data[6]=7; data[7]=3; data[8]=13; data[9]=6;
 	//data[10]=16; data[11]=11; data[12]=8; data[13]=19; data[14]=10; data[15]=17; data[16]=9; data[17]=15; data[18]=2; data[19]=1;
    // Write the results back through the pointer parameters

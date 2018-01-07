@@ -363,7 +363,7 @@ void mergeRanking() {
 		MPI_Send(arrMerged, size, MPI_LONG, rootRank, ANSW, MPI_COMM_WORLD);
 		free(arrMerged);
 	}
-	free(arrL); free(totalArrR);
+
 	if (height < rootHt) mergeRanking();
 }
 
